@@ -1,0 +1,35 @@
+!pip install aiosmtplib
+!pip install aiosqlite
+!pip install pandas
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+# Fifth cell - List files
+!ls -l
+
+# Fourth cell - Run the test
+!python test_webinar.py
+
+# First cell - Install required packages
+!pip install pytz
+
+# Second code cell - Create the test file
+%%writefile webinar_test.py
+
+
+import pandas as pd
+import pytz
+import uuid
+from datetime import datetime, timedelta
+import sqlite3
+from enum import Enum
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from dataclasses import dataclass
+from typing import List, Dict, Optional
+
+!pip install pandas pytz uuid email-validator python-dateutil
+
+pip install pandas pytz
